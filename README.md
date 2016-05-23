@@ -8,7 +8,6 @@
 2 - Find where Google Palces Autocomplete is created:
 
 ```
-
 var autocomplete = new google.maps.places.Autocomplete(input);
 ```
 
@@ -20,7 +19,6 @@ var autocomplete = new google.maps.places.Autocomplete(input);
 Example:
 
 ```
-
 (function setAutoCompleteLimiter(){
  
         if(typeof googlePlugins !== 'undefined' && googlePlugins.limiter && googlePlugins.limiter.setAutoCompleteLimiter){
