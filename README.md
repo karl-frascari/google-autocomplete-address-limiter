@@ -2,13 +2,12 @@
  
 
 ### Instrucitions for use: ###
-**
-1 - Load the google-autocomplete-address-limiter.js in your project:**
+
+1 - Load the google-autocomplete-address-limiter.js in your project:
  
-**2 - Find where Google Palces Autocomplete is created:**
+2 - Find where Google Palces Autocomplete is created:
 
 ```
-#!javascript
 
 var autocomplete = new google.maps.places.Autocomplete(input);
 ```
@@ -21,7 +20,7 @@ var autocomplete = new google.maps.places.Autocomplete(input);
 Example:
 
 ```
-#!javascript
+
 (function setAutoCompleteLimiter(){
  
         if(typeof googlePlugins !== 'undefined' && googlePlugins.limiter && googlePlugins.limiter.setAutoCompleteLimiter){
