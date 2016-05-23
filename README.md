@@ -1,27 +1,9 @@
-###Google Autocomplete Limiter by Maplink is a component which limits the calls in google places autocomplete API, based on a certain amount of caracters.###
+###Google Autocomplete Address Limiter is a component which limits the calls in google places autocomplete API, based on a certain amount of caracters.###
  
 
 ### Instrucitions for use: ###
 **
-1 - Load the maplink-google-autocomplete-limiter.min.js in your project:**
-
-HTML header:
-
-```
-#!HTML
-
-<script src="http://corp.maplink.com.br/googleplugins/AutocompleteLimiter"></script>
-```
-or
-
-Javascript:
-
-```
-#!javascript
-var googleLimiterJavascript = document.createElement('script');
-googleLimiterJavascript.src = 'http://corp.maplink.com.br/googleplugins/AutocompleteLimiter';
-document.head.appendChild(googleLimiterJavascript);
-```
+1 - Load the google-autocomplete-address-limiter.js in your project:**
  
 **2 - Find where Google Palces Autocomplete is created:**
 
@@ -42,7 +24,7 @@ Example:
 #!javascript
 (function setAutoCompleteLimiter(){
  
-        if(typeof mplk !== 'undefined' && mplk.google && mplk.google.setAutoCompleteLimiter){
+        if(typeof googlePlugins !== 'undefined' && googlePlugins.limiter && googlePlugins.limiter.setAutoCompleteLimiter){
              
             //When search should start
             var startSearchAt = 5;
@@ -50,7 +32,7 @@ Example:
             //The id or class element in DOM
             var googleInput = '#searchAddress';
  
-            mplk.google.setAutoCompleteLimiter(startSearchAt, googleInput);
+            googlePlugins.limiter.setAutoCompleteLimiter(startSearchAt, googleInput);
              
         }else{
             console.log('Google Search Limit Character Error: Could not find plugin. Be sure that the it was loaded.');
